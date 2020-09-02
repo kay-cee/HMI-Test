@@ -1,3 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Karla%3A100%2C100italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic%7C&ver=5.4.2');
+
+/* @import url('https://fonts.googleapis.com/css?family=Roboto|Barrio'); */
+
+body,
+html {
+    height: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/strange_bullseyes.png);
+    font-family: 'Karla', 'Oswald';
+    /* perspective: 1000; */
+    margin: 0;
+    /* font: 400 15px/1.8 "Lato", sans-serif; */
+    color: #777;
+    /* font: normal 500 46px / 60px "Oswald", Helvetica, Arial, Verdana, sans-serif;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: 500;
+    font-stretch: normal;
+    font-size: 46px;
+    line-height: 60px;
+    font-family: Oswald, Helvetica, Arial, Verdana, sans-serif; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Oswald';
+}
+
+.card-title {
+    max-width: 100%;
+    font-size: 4vw;
+}
+
+.card-img {
+    object-fit: cover;
+    width: 40px;
+    height: 100px;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+    min-width: 100%;
+    height: 48vh;
+    min-height: 48vh;
+}
+
+.card-img {
+    filter: brightness(75%) saturate(50%);
+}
+
+.lift {
+    z-index: 4000;
+}
+
+
+/* =========================================== */
+
+
 /*
 flip card
 */
@@ -46,47 +113,75 @@ For demo purpose
 
 /* @import url('https://fonts.googleapis.com/css?family=Roboto|Barrio'); */
 
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-@import url('https://fonts.googleapis.com/css?family=Karla%3A100%2C100italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic%7C&ver=5.4.2');
-
-/* @import url('https://fonts.googleapis.com/css?family=Roboto|Barrio'); */
-
-body {
-    height: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/strange_bullseyes.png);
-    font-family: 'Karla', 'Oswald';
-    perspective: 1000;
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Oswald';
+.bgimg-1 {
+    background-image: url("../img/para-3.jpg");
+    min-height: 100%;
 }
 
-.card-title {
-    max-width: 100%;
-    font-size: 4vw;
+.bgimg-2 {
+    background-image: url("../img/para-2.jpg");
+    min-height: 400px;
 }
 
-.card-img,
-.card-img-top,
-.card-img-bottom {
-    min-width: 100%;
-    height: 48vh;
-    min-height: 48vh;
+.bgimg-3 {
+    background-image: url("../img/party.jpg");
+    min-height: 400px;
 }
 
-.card-img {
-    filter: brightness(75%) saturate(50%);
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
 }
 
-.lift {
-    z-index: 4000;
+.caption span.border {
+    background-color: rgba(84, 15, 135, 0.9);
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    /* letter-spacing: 10px; */
+}
+
+.btn-purple span.border {
+    background-color: rgba(84, 15, 135, 0.9);
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    /* letter-spacing: 10px; */
+}
+
+h3 {
+    /* letter-spacing: 5px; */
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+.mid-section {
+    position: relative;
 }
 
 
-/* =========================================== */
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}

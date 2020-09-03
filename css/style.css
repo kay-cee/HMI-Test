@@ -30,7 +30,8 @@ html {
 h1,
 h2,
 h3,
-h4 {
+h4,
+li {
     font-family: 'Oswald';
 }
 
@@ -110,9 +111,6 @@ flip card
 For demo purpose
 */
 
-
-/* @import url('https://fonts.googleapis.com/css?family=Roboto|Barrio'); */
-
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
@@ -184,4 +182,25 @@ h3 {
     .bgimg-3 {
         background-attachment: scroll;
     }
+    .btn-purple,
+    .top-list {
+        display: none;
+    }
 }
+
+li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+nav ul {
+    margin-top: 20px;
+}
+
+a span.border:hover {
+    background-color: yellow !important;
+    color: black;
+}
+
+.mini-widgets {}

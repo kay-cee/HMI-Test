@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Karla%3A100%2C100italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic%7C&ver=5.4.2');
-
-/* @import url('https://fonts.googleapis.com/css?family=Roboto|Barrio'); */
-
+@import url('bootstrap-social.css');
 body,
 html {
     height: 100%;
@@ -56,10 +54,6 @@ li {
 
 .card-img {
     filter: brightness(75%) saturate(50%);
-}
-
-.lift {
-    z-index: 4000;
 }
 
 
@@ -198,9 +192,47 @@ nav ul {
     margin-top: 20px;
 }
 
+a span.border {
+    background-color: rgba(84, 15, 135, 0.9);
+}
+
 a span.border:hover {
     background-color: yellow !important;
     color: black;
 }
 
-.mini-widgets {}
+.mini-widgets {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.sp-offer {
+    display: block;
+    max-width: 300px !important;
+    max-height: auto;
+    object-fit: cover;
+}
+
+.sp-card {
+    background-color: grey;
+}

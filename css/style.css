@@ -297,7 +297,7 @@ a span.border:hover {
 
 .overlay {
     /* background-color: #777; */
-    background: rgba(51, 51, 51, .5);
+    background: rgba(51, 51, 51, .01);
     position: absolute;
     top: 0;
     left: 0;
@@ -318,4 +318,9 @@ a span.border:hover {
     font-size: 60px;
     opacity: 1;
     visibility: visible;
+}
+
+.contact-foot:hover {
+    background-color: rgba(214, 214, 20, 0.5) !important;
+    ;
 }

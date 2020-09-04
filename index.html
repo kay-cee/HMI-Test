@@ -17,24 +17,40 @@
 
 <body>
     <nav class="navbar navbar-light white d-flex justify-content-center">
+
         <div class="d-flex justify-content-center row">
             <ul class="row top-list">
-                <li class="px-2 py-1 btn-outline-purple">Home</li>
-                <li>Events</li>
-                <li>Specials</li>
-                <li>Menu</li>
-                <li>Latest News</li>
-                <li>Gallery</li>
-                <li>Contact Us</li>
+                <a href="#">
+                    <li class="px-2 py-1 btn-outline-purple">Home</li>
+                </a>
+                <a href="">
+                    <li>Events</li>
+                </a>
+                <a href="">
+                    <li>Specials</li>
+                </a>
+                <a href="">
+                    <li>Menu</li>
+                </a>
+                <a href="">
+                    <li>Latest News</li>
+                </a>
+                <a href="">
+                    <li>Gallery</li>
+                </a>
+                <a href="">
+                    <li>Contact Us</li>
+                </a>
             </ul>
+
             <div class="mini-widgets row">
-                <div class="special-icons">
-                    <a class="btn btn-social-icon btn-twitter">
+                <!-- <div class="special-icons">
+                    <a class="btn btn-social-icon btn-twitter rounded">
                         <i class="fa fa-twitter fa-2x"></i>
                     </a>
 
-                </div>
-                <div class="btn-purple">
+                </div> -->
+                <div class="btn-purple" style="background-color: transparent !important;">
                     <a href="#"><span class="border" style="font-family: Oswald; font-size: medium;">(01323) 840459</span></a>
                 </div>
 
@@ -42,15 +58,109 @@
         </div>
 
     </nav>
+    <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto p-3 d-flex justify-content-between">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Specials</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menus</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Latest News</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+            </li>
+        </ul>
+    </div>
+    </nav> -->
+    <div class="row">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="intro-text">WELCOME TO HMI</h1>
+                        <p>Your Local Family Friendly Social Club</p>
+                        <button class="btn btn-outline-secondary">Read More</button>
+                    </div>
+                    <div class="overlay"></div>
+                    <img src="img/party.jpg" class="d-block w-100" alt="...">
+
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <img src="img/hu7-1152x768.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="intro-text">WELCOME TO HMI</h1>
+                        <p>Welcome Back - We've Missed You</p>
+                        <button class="btn btn-outline-secondary">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 
     <section class="bgimg-1">
         <div class="caption">
             <span class="border">SCROLL DOWN</span>
         </div>
-    </section>
+    </section> -->
 
     <section style="text-align:center;padding:50px 80px;text-align: justify;">
         <div class="text-center">
-            <h2 class="text-secondary">Our Events</h2>
+            <h1 class="text-purple">Our Events</h1>
             <div class="d-flex justify-content-center">
                 <p class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
@@ -64,8 +174,9 @@
                             <div class="card-body">
                                 <div class="card-img-overlay d-flex justify-content-center align-items-center">
                                     <div class="text-center">
-                                        <i class="fas fa-apple-alt fa-2x"></i>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <i class="fas fa-apple-alt fa-2x pb-4"></i>
+                                        <h3 class="text-light font-weight-bold">Sunday night Raffle</h3>
+                                        <h3 class="font-weight-bold text-warning">Event Date: 7/21/2020</h3>
                                     </div>
                                 </div>
                             </div>
@@ -89,8 +200,9 @@
                             <div class="card-body">
                                 <div class="card-img-overlay d-flex justify-content-center align-items-center">
                                     <div class="text-center">
-                                        <i class="fas fa-camera fa-2x"></i>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <i class="fas fa-camera fa-2x pb-4"></i>
+                                        <h3 class="text-light font-weight-bold">Sunday night Raffle</h3>
+                                        <h3 class="font-weight-bold text-warning">Event Date: 7/21/2020</h3>
                                     </div>
                                 </div>
                             </div>
@@ -115,8 +227,9 @@
                             <div class="card-body">
                                 <div class="card-img-overlay d-flex justify-content-center align-items-center">
                                     <div class="text-center">
-                                        <i class="fas fa-car fa-2x"></i>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <i class="fas fa-car fa-2x pb-4"></i>
+                                        <h3 class="text-light font-weight-bold">Sunday night Raffle</h3>
+                                        <h3 class="font-weight-bold text-warning">Event Date: 7/21/2020</h3>
                                     </div>
                                 </div>
                             </div>
@@ -140,8 +253,9 @@
                             <div class="card-body">
                                 <div class="card-img-overlay d-flex justify-content-center align-items-center">
                                     <div class="text-center">
-                                        <i class="fas fa-glass-martini-alt fa-2x"></i>
-                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <i class="fas fa-glass-martini-alt fa-2x pb-4"></i>
+                                        <h3 class="text-light font-weight-bold">Sunday night Raffle</h3>
+                                        <h3 class="font-weight-bold text-warning">Event Date: 7/21/2020</h3>
                                     </div>
                                 </div>
                             </div>
@@ -169,9 +283,32 @@
         </div>
     </section>
 
-    <section class="bgimg-2">
-        <div class="caption">
-            <span class="border">LESS HEIGHT</span>
+    <section class="bgimg-3">
+        <div class="text-center pt-5 mt-5">
+            <h1 class="text-white">Special Offer</h1>
+        </div>
+        <div class="mb-5 p-5">
+            <div class="row d-flex justify-content-center">
+                <div class="view ">
+                    <img class="card-img-top zoom" src="img/New-Project-768x512.jpg" alt="Card image cap" style="object-fit: cover;">
+
+                </div>
+                <!-- Card -->
+                <div class="latest-news card col-md-3 mr-2">
+
+                    <!-- Card content -->
+                    <div class="card-body text-center">
+                        <h4 class="text-purple">Snooker Returns</h4>
+                        <p class="my-1 text-dark">Latest News</p>
+                        <p class="card-text text-dark">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do…
+                        </p>
+                        <a href="#" class="text-purple">Read more<i class="fas fa-caret-right fa-xs pl-1"></i></a>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 
@@ -181,9 +318,103 @@
         </div>
     </section>
 
-    <section class="bgimg-3">
-        <div class="caption">
-            <span class="border">SCROLL UP</span>
+    <section class="bgimg-2">
+        <div class="text-center pt-5 mt-5">
+            <h1 class="text-white">Latest News</h1>
+        </div>
+        <div class="mb-5 p-5">
+            <div class="row d-flex justify-content-center">
+                <!-- Card -->
+                <div class="latest-news card col-md-3 mr-2">
+
+                    <!-- Card image -->
+                    <div class="view ">
+                        <img class="card-img-top zoom" src="img/New-Project-768x512.jpg" alt="Card image cap" style="object-fit: cover;">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                        <div class="overlay d-flex align-items-start justify-content-end latest-date">
+                            <div class="flex text-light purple p-1" style="width: 50px; height: 100px;">
+                                <span>20</span>
+                                <span>Jul</span>
+                                <span>2020</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body text-center">
+                        <h4 class="text-purple">Snooker Returns</h4>
+                        <p class="my-1 text-dark">Latest News</p>
+                        <p class="card-text text-dark">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do…
+                        </p>
+                        <a href="#" class="text-purple">Read more<i class="fas fa-caret-right fa-xs pl-1"></i></a>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+                <div class="latest-news card col-md-3 mr-2">
+
+                    <!-- Card image -->
+                    <div class="view ">
+                        <img class="card-img-top zoom" src="img/Screenshot_26-400x267.png" alt="Card image cap" style="object-fit: cover;">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                        <div class="overlay d-flex align-items-start justify-content-end latest-date">
+                            <div class="flex text-light purple p-1" style="width: 50px; height: 100px;">
+                                <span>20</span>
+                                <span>Jul</span>
+                                <span>2020</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body text-center">
+                        <h4 class="text-purple">Snooker Returns</h4>
+                        <p class="my-1 text-dark">Latest News</p>
+                        <p class="card-text text-dark">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do…
+                        </p>
+                        <a href="#" class="text-purple">Read more<i class="fas fa-caret-right fa-xs pl-1"></i></a>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+                <div class="latest-news card col-md-3">
+
+                    <!-- Card image -->
+                    <div class="view ">
+                        <img class="card-img-top zoom" src="img/hu7.jpg" alt="Card image cap" style="object-fit: cover;">
+                        <div class="overlay d-flex justify-content-center align-items-center">
+                            <i class="fa fa-search-plus fa-2x"></i>
+                        </div>
+                        <div class="overlay d-flex align-items-start justify-content-end latest-date">
+                            <div class="flex text-light purple p-1" style="width: 50px; height: 100px;">
+                                <span>20</span>
+                                <span>Jul</span>
+                                <span>2020</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body text-center">
+                        <h4 class="text-purple">Snooker Returns</h4>
+                        <p class="my-1 text-dark">Latest News</p>
+                        <p class="card-text text-dark">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do…
+                        </p>
+                        <a href="#" class="text-purple">Read more<i class="fas fa-caret-right fa-xs pl-1"></i></a>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 
@@ -198,195 +429,12 @@
             <span class="border">COOL!</span>
         </div>
     </section>
-    <div class="container">
-        <!-- ============================================================================================================================== -->
-        <!-- carousel start -->
-        <div>
-
-        </div>
-        <!-- ============================================================================================================================== -->
-        <!-- events section   -->
-        <!-- <section class="container-fluid justify-content-center">
-            <div class="text-center">
-                <h2>Our Events</h2>
-                <div class="d-flex justify-content-center">
-                    <p class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="card-flip h-100">
-                            <div class="card-front text-warning bg-dark">
-                                <img class="card-img" src="img/raffl.jpg" alt="">
-                                <div class="card-body">
-                                    <i class="fa fa-search fa-5x float-right"></i>
-                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                        <div class="text-center">
-                                            <h3 class="card-title">Front</h3>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-back text-warning">
-                                <div class="card-body">
-                                    <img class="card-img" src="img/raffl.jpg" alt="">
-                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                        <div class="text-center">
-                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card-flip h-100">
-                            <div class="card-front text-warning bg-dark">
-                                <img class="card-img" src="img/card.jpg" alt="">
-                                <div class="card-body">
-                                    <i class="fa fa-search fa-5x float-right"></i>
-                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                        <div class="text-center">
-                                            <h3 class="card-title">Front</h3>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-back text-warning">
-                                <div class="card-body">
-                                    <img class="card-img" src="img/card.jpg" alt="">
-                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                        <div class="text-center">
-                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card-flip h-100">
-                            <div class="card-front text-warning bg-dark">
-                                <img class="card-img" src="img/day.jpg" alt="">
-                                <div class="card-body">
-                                    <i class="fa fa-search fa-5x float-right"></i>
-                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                        <div class="text-center">
-                                            <h3 class="card-title">Front</h3>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-back text-warning">
-                                <div class="card-body">
-                                    <img class="card-img" src="img/day.jpg" alt="">
-                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                        <div class="text-center">
-                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card-flip h-100">
-                            <div class="card-front text-warning bg-dark">
-                                <img class="card-img" src="img/party.jpg" alt="">
-                                <div class="card-body">
-                                    <i class="fa fa-search fa-5x float-right"></i>
-                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                        <div class="text-center">
-                                            <h3 class="card-title">Front</h3>
-                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-back text-warning">
-                                <div class="card-body">
-                                    <img class="card-img" src="img/party.jpg" alt="">
-                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                        <div class="text-center">
-                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <br><br>
-            <div class="d-flex justify-content-center h-100">
-                <a href="" class="btn btn-primary btn-purple">View all upcoming events</a>
-            </div>
-        </section> -->
-
-        <!-- ============================================================================================================================== -->
-        <!-- paralax test section  -->
-        <section>
-
-        </section>
-        <!-- ============================================================================================================================== -->
-        <section>
-
-        </section>
-        <!-- ============================================================================================================================== -->
-        <section>
-            <!-- <div class="col-sm-4">
-                        <div class="card-flip h-100">
-                            <div class="card-front text-white bg-warning">
-                                <div class="card-body">
-                                    <i class="fa fa-search-plus fa-5x float-right"></i>
-                                    <h3 class="card-title">Front</h3>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                </div>
-                            </div>
-                            <div class="card-back bg-dark text-white">
-                                <div class="card-body">
-
-                                    <h3 class="card-title">Back #2</h3>
-                                    <p class="card-text">Suprise this one has content on the back!</p>
-                                    <a href="#" class="btn btn-outline-secondary">Action</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card-flip h-100">
-                            <div class="card-front text-white bg-primary">
-
-                                <div class="card-body">
-                                    <i class="fa fa-arrow-circle-right fa-5x float-right"></i>
-                                    <h3 class="card-title">Front</h3>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content. This one is a little because it has more text!</p>
-                                </div>
-                            </div>
-                            <div class="card-back bg-white">
-                                <div class="card-body text-primary">
-                                    <h3 class="card-title">Wow! #3</h3>
-                                    <p class="card-text">Suprise this one has content on the back!</p>
-                                    <a href="#" class="btn btn-outline-primary">Action</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-        </section>
-        <!-- ============================================================================================================================== -->
-    </div>
     <!-- Footer -->
     <footer class="page-footer font-small black">
 
         <!-- Copyright -->
-        <div class="footer-copyright px-3 py-3">© 2020 Copyright: All Rights Reserved
-            <a href="https://thehmi.co.uk"> The HMI</a>
+        <div class="container px-3 py-3">
+            <p class="text-light">© 2020 Copyright: All Rights Reserved</p>
         </div>
         <!-- Copyright -->
 
@@ -398,6 +446,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script src="js/fontawesome.js"></script>
     <!-- animate on scroll library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>

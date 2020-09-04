@@ -14,32 +14,44 @@
     <title>HMI Bootstrap</title>
     <script src="https://kit.fontawesome.com/9db640466c.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    .card {
+        background-color: transparent;
+    }
+</style>
 
 <body>
-
-
+    <div class="container text-center mt-5">
+        <h1 class="text-dark mt-5">Special Offers</h1>
+    </div>
     <section>
-        <div class="text-center">
-            <h2 class="text-black">Special Offers</h2>
+        <div class="mb-5 p-5 container">
+            <div class=" card ">
+                <div class="row">
+                    <div class="view col-md-5">
+                        <img class="card-img-top sp-image zoom" src="img/New-Project-768x512.jpg" alt="Card image cap" style="object-fit: cover;">
 
-        </div>
-        <div class="container sp-card">
-            <div class="row">
-                <div class="col-md-5">
-                    <span>
-                        <img class="sp-offer" src="./img/t_564e227e75c44c5883f7ffc23e83bc0e_name_BE56F3840D2A4333BB53000C120BCFA3-960x480.jpg" />
-                    </span>
-                </div>
-                <div class="col-md-7">
-                    <h3>Early Bird Specials</h3>
-                    <caption>Special offers</caption>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <h3>
+                    </div>
+                    <!-- Card -->
+                    <div class="col-md-6 mr-2">
 
-                    </h3>
+                        <!-- Card content -->
+                        <div class="card-body">
+                            <h2 class="text-purple">Early Bird Specials</h2>
+                            <p class="my-1 text-dark">Special offers</p>
+                            <p class="text-dark">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <h4 class="text-dark">Offer Date : <span class="text-purple"> 00 / 00 / 0000</span> </h4>
+                            <h4 class="text-dark">Offer Time : <span class="text-purple">00 : 00</span></h4>
+                            <a href="#" class="text-purple">Show More<i class="fas fa-caret-right fa-xs pl-1"></i></a>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Optional JavaScript -->

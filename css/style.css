@@ -48,8 +48,8 @@ li {
 .card-img-top,
 .card-img-bottom {
     min-width: 100%;
-    height: 48vh;
-    min-height: 48vh;
+    height: 40vh;
+    min-height: 40vh;
 }
 
 .card-img {
@@ -108,7 +108,6 @@ For demo purpose
 .bgimg-2,
 .bgimg-3 {
     position: relative;
-    opacity: 0.65;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,8 +149,9 @@ For demo purpose
 .btn-purple span.border {
     background-color: rgba(84, 15, 135, 0.9);
     color: #fff;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 25px;
+    font-size: medium;
     /* letter-spacing: 10px; */
 }
 
@@ -162,8 +162,8 @@ For demo purpose
 h3 {
     /* letter-spacing: 5px; */
     /* text-transform: uppercase; */
-    font: 20px "Lato", sans-serif;
-    color: #111;
+    /* font: 20px "Lato", sans-serif;
+    color: #111; */
 }
 
 .mid-section {
@@ -323,4 +323,8 @@ a span.border:hover {
 .contact-foot:hover {
     background-color: rgba(214, 214, 20, 0.5) !important;
     ;
+}
+
+.row img {
+    padding: 0px 0px !important;
 }

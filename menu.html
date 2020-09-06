@@ -14,10 +14,9 @@
     <title>HMI Bootstrap</title>
     <script src="https://kit.fontawesome.com/9db640466c.js" crossorigin="anonymous"></script>
     <style>
-        .nav-tabs .nav-link.active {
-            background-color: rgba(84, 15, 135, 0.9);
-            border-color: #dee2e6 #dee2e6 #fff;
-            color: white !important;
+        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            color: #fff !important;
+            background-color: #540F87;
         }
     </style>
 </head>
@@ -65,260 +64,157 @@
         </div>
 
     </nav>
-    <div class="container text-center mt-5">
-        <h1 class="mt-5 text-purple">Our Menu</h1>
-        <div class="container mt-4">
-            <hr class="col-md-1" style="border: 0; border-bottom: 5px solid yellow;">
-        </div>
-    </div>
-    <section class="mid-section mb-5">
-        <div class="container text-center ">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Starters</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#side" role="tab" aria-controls="profile" aria-selected="false">Side</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#main" role="tab" aria-controls="contact" aria-selected="false">Main</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#specials" role="tab" aria-controls="contact" aria-selected="false">Specials</a>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="row text-dark">
-                        <div class="col-md-3">
-                            <ul>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Raw denim <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Raw denim <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <ul>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Raw denim <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <ul>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                            </ul>
+
+    
+    <section class="mid-section" style="padding: 50px 80px; background-image: url(http://thehmi.co.uk/wp-content/uploads/2020/07/abbb.jpg);background-size: cover;">
+        <div class="container text-center">
+            <div class="container text-center mt-5">
+                <h1 class="mt-5 text-purple">Our Menu</h1>
+                <div class="container mt-4">
+                    <hr class="col-md-1" style="border: 0; border-bottom: 5px solid yellow;">
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. 
+                </p>
+            </div>
+            
+            <div class="text-center mt-5">
+                <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="home" aria-selected="true">
+                            Starters
+                        </a>
+                    </li>
+    
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="profile-tab" data-toggle="pill" href="#pills-side" role="tab" aria-controls="profile" aria-selected="false">
+                            Side
+                        </a>
+                    </li>
+    
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="contact-tab" data-toggle="pill" href="#pills-main" role="tab" aria-controls="contact" aria-selected="false">
+                            Main
+                        </a>
+                    </li>
+    
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="contact-tab" data-toggle="pill" href="#pills-specials" role="tab" aria-controls="contact" aria-selected="false">
+                            Specials
+                        </a>
+                    </li>
+                </ul>
+            </div>
+           
+            <div class="text-center mt-5">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="row text-dark ">
+                            <div class="col-md-12 col-lg-12 standard-arrow list-divider">
+                                <ul>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Raw denim</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Raw denim</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="side" role="tabpanel" aria-labelledby="side-tab">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <ul>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <ul>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <ul>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                            </ul>
+    
+                    <div class="tab-pane fade" id="pills-side" role="tabpanel" aria-labelledby="pills-side-tab">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12">
+                                <ul>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="main" role="tabpanel" aria-labelledby="main-tab">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <ul>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <ul>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <ul>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <hr>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                            </ul>
+    
+                    <div class="tab-pane fade" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12">
+                                <ul>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                    <hr>
+                                    <li>Lorem Impum</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="specials" role="tabpanel" aria-labelledby="specials-tab">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <ul>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <ul>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>sidi amet <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <ul>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                                <li>Lorem Impum <i class="fas fa-caret-right fa-xs pl-1"></i></li>
-                            </ul>
+    
+                    <div class="tab-pane fade" id="pills-special" role="tabpanel" aria-labelledby="pills-special-tab">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12">
+                                <ul>
+                                    <li>Lorem Impum</li>
+                                    <li>Lorem Impum</li>
+                                    <li>Lorem Impum</li>
+                                    <li>Lorem Impum</li>
+                                    <li>Lorem Impum</li>
+                                    <li>Lorem Impum</li>
+                                    <li>Lorem Impum</li>
+                                    <li>Lorem Impum</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="page-footer font-small black ">
-
         <!-- Copyright -->
         <div class="container px-3 py-3 ">
             <p class="text-light ">© 2020 Copyright: All Rights Reserved</p>
         </div>
         <!-- Copyright -->
-
     </footer>
     <!-- Footer -->
 

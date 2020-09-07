@@ -21,8 +21,7 @@
 </style>
 
 <body>
-    <nav class="navbar navbar-light white d-flex justify-content-center">
-
+    <nav class="navbar sticky-top navbar-light white d-flex justify-content-center">
         <div class="d-flex justify-content-center row">
             <ul class="row top-list">
                 <a href="#">
@@ -49,20 +48,43 @@
             </ul>
 
             <div class="mini-widgets row">
-                <!-- <div class="special-icons">
-                    <a class="btn btn-social-icon btn-twitter rounded">
-                        <i class="fa fa-twitter fa-2x"></i>
-                    </a>
-
-                </div> -->
                 <div class="btn-purple" style="background-color: transparent !important;">
                     <a href="#"><span class="border" style="font-family: Oswald; font-size: medium;">(01323) 840459</span></a>
                 </div>
-
             </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="row ">
+                <a href="#">
+                    <li class="px-2 py-1 btn-outline-purple">Home</li>
+                </a>
+                <a href="">
+                    <li>Events</li>
+                </a>
+                <a href="">
+                    <li>Specials</li>
+                </a>
+                <a href="">
+                    <li>Menu</li>
+                </a>
+                <a href="">
+                    <li>Latest News</li>
+                </a>
+                <a href="">
+                    <li>Gallery</li>
+                </a>
+                <a href="">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
         </div>
 
     </nav>
+    <nav class="d-flex justify-content-end mr-4">
+        <span class="sideNavButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </nav>
+
 
     <div class="section h-100" style="padding: 50px 80px; background-image: url(http://thehmi.co.uk/wp-content/uploads/2020/07/abbb.jpg);background-size: cover;">
         <div class="container text-center mt-5">
@@ -71,18 +93,18 @@
                 <hr class="col-md-1" style="border: 0; border-bottom: 5px solid yellow;">
             </div>
         </div>
-    
+
         <section>
             <div class="mb-5 p-5 container">
                 <div class=" card ">
                     <div class="row">
                         <div class="view col-md-5">
                             <img class="card-img-top sp-image zoom" src="img/New-Project-768x512.jpg" alt="Card image cap" style="object-fit: cover;">
-    
+
                         </div>
                         <!-- Card -->
                         <div class="col-md-6 mr-2">
-    
+
                             <!-- Card content -->
                             <div class="card-body">
                                 <h2 class="text-purple">Early Bird Specials</h2>
@@ -93,19 +115,19 @@
                                 <h4 class="text-dark">Offer Date : <span class="text-purple"> 00 / 00 / 0000</span> </h4>
                                 <h4 class="text-dark">Offer Time : <span class="text-purple">00 : 00</span></h4>
                                 <a href="#" class="text-purple">Show More<i class="fas fa-caret-right fa-xs pl-1"></i></a>
-    
+
                             </div>
-    
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    
+
 
     <!-- Footer -->
-    <footer class="page-footer font-small black ">
+    <footer class="page-footer font-small black" id="footer">
 
         <!-- Copyright -->
         <div class="container px-3 py-3 ">
@@ -123,6 +145,15 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <!-- animate on scroll library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>

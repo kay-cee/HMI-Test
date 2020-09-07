@@ -14,7 +14,8 @@
     <title>HMI Bootstrap</title>
     <script src="https://kit.fontawesome.com/9db640466c.js" crossorigin="anonymous"></script>
     <style>
-        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
             color: #fff !important;
             background-color: #540F87;
         }
@@ -22,8 +23,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light white d-flex justify-content-center">
-
+    <nav class="navbar sticky-top navbar-light white d-flex justify-content-center">
         <div class="d-flex justify-content-center row">
             <ul class="row top-list">
                 <a href="#">
@@ -50,22 +50,44 @@
             </ul>
 
             <div class="mini-widgets row">
-                <!-- <div class="special-icons">
-                    <a class="btn btn-social-icon btn-twitter rounded">
-                        <i class="fa fa-twitter fa-2x"></i>
-                    </a>
-
-                </div> -->
                 <div class="btn-purple" style="background-color: transparent !important;">
                     <a href="#"><span class="border" style="font-family: Oswald; font-size: medium;">(01323) 840459</span></a>
                 </div>
-
             </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="row ">
+                <a href="#">
+                    <li class="px-2 py-1 btn-outline-purple">Home</li>
+                </a>
+                <a href="">
+                    <li>Events</li>
+                </a>
+                <a href="">
+                    <li>Specials</li>
+                </a>
+                <a href="">
+                    <li>Menu</li>
+                </a>
+                <a href="">
+                    <li>Latest News</li>
+                </a>
+                <a href="">
+                    <li>Gallery</li>
+                </a>
+                <a href="">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
         </div>
 
     </nav>
+    <nav class="d-flex justify-content-end mr-4">
+        <span class="sideNavButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </nav>
 
-    
+
     <section class="mid-section" style="padding: 50px 80px; background-image: url(http://thehmi.co.uk/wp-content/uploads/2020/07/abbb.jpg);background-size: cover;">
         <div class="container text-center">
             <div class="container text-center mt-5">
@@ -77,11 +99,10 @@
 
             <div class="text-center mt-5">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
             </div>
-            
+
             <div class="text-center mt-5">
                 <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -89,19 +110,19 @@ tempor incididunt ut labore et dolore magna aliqua.
                             Starters
                         </a>
                     </li>
-    
+
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="profile-tab" data-toggle="pill" href="#pills-side" role="tab" aria-controls="profile" aria-selected="false">
                             Side
                         </a>
                     </li>
-    
+
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="contact-tab" data-toggle="pill" href="#pills-main" role="tab" aria-controls="contact" aria-selected="false">
                             Main
                         </a>
                     </li>
-    
+
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="contact-tab" data-toggle="pill" href="#pills-specials" role="tab" aria-controls="contact" aria-selected="false">
                             Specials
@@ -109,7 +130,7 @@ tempor incididunt ut labore et dolore magna aliqua.
                     </li>
                 </ul>
             </div>
-           
+
             <div class="text-center mt-5">
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -136,7 +157,7 @@ tempor incididunt ut labore et dolore magna aliqua.
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="tab-pane fade" id="pills-side" role="tabpanel" aria-labelledby="pills-side-tab">
                         <div class="row">
                             <div class="col-md-12 col-lg-12">
@@ -161,7 +182,7 @@ tempor incididunt ut labore et dolore magna aliqua.
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="tab-pane fade" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab">
                         <div class="row">
                             <div class="col-md-12 col-lg-12">
@@ -185,18 +206,18 @@ tempor incididunt ut labore et dolore magna aliqua.
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="tab-pane fade" id="pills-special" role="tabpanel" aria-labelledby="pills-special-tab">
                         <div class="row">
                             <div class="col-md-12 col-lg-12">
                                 <ul>
-                                    <li>Lorem Impum</li>
-                                    <li>Lorem Impum</li>
-                                    <li>Lorem Impum</li>
-                                    <li>Lorem Impum</li>
-                                    <li>Lorem Impum</li>
-                                    <li>Lorem Impum</li>
-                                    <li>Lorem Impum</li>
+                                    <li>Lorem Impum</li><br>
+                                    <li>Lorem Impum</li><br>
+                                    <li>Lorem Impum</li><br>
+                                    <li>Lorem Impum</li><br>
+                                    <li>Lorem Impum</li><br>
+                                    <li>Lorem Impum</li><br>
+                                    <li>Lorem Impum</li><br>
                                     <li>Lorem Impum</li>
                                 </ul>
                             </div>
@@ -204,12 +225,12 @@ tempor incididunt ut labore et dolore magna aliqua.
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="page-footer font-small black ">
+    <footer class="page-footer font-small black " id="footer">
         <!-- Copyright -->
         <div class="container px-3 py-3 ">
             <p class="text-light ">© 2020 Copyright: All Rights Reserved</p>
@@ -226,6 +247,15 @@ tempor incididunt ut labore et dolore magna aliqua.
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <!-- animate on scroll library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>

@@ -11,13 +11,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>HMI Bootstrap</title>
+    <title>HMI Bootstrap </title>
     <script src="https://kit.fontawesome.com/9db640466c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-light white d-flex justify-content-center">
-
+    <nav class="navbar sticky-top navbar-light white d-flex justify-content-center">
         <div class="d-flex justify-content-center row">
             <ul class="row top-list">
                 <a href="#">
@@ -44,19 +43,41 @@
             </ul>
 
             <div class="mini-widgets row">
-                <!-- <div class="special-icons">
-                    <a class="btn btn-social-icon btn-twitter rounded">
-                        <i class="fa fa-twitter fa-2x"></i>
-                    </a>
-
-                </div> -->
                 <div class="btn-purple" style="background-color: transparent !important;">
                     <a href="#"><span class="border" style="font-family: Oswald; font-size: medium;">(01323) 840459</span></a>
                 </div>
-
             </div>
         </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="row ">
+                <a href="#">
+                    <li class="px-2 py-1 btn-outline-purple">Home</li>
+                </a>
+                <a href="">
+                    <li>Events</li>
+                </a>
+                <a href="">
+                    <li>Specials</li>
+                </a>
+                <a href="">
+                    <li>Menu</li>
+                </a>
+                <a href="">
+                    <li>Latest News</li>
+                </a>
+                <a href="">
+                    <li>Gallery</li>
+                </a>
+                <a href="">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </div>
 
+    </nav>
+    <nav class="d-flex justify-content-end mr-4">
+        <span class="sideNavButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </nav>
 
     <section class="mid-section mb-5 h-100" style="background-image: url(http://thehmi.co.uk/wp-content/uploads/2020/07/abbb.jpg);background-size: cover;">
@@ -69,22 +90,22 @@
 
         <div class="container-fluid p-5" style="background-image: url(http://thehmi.co.uk/wp-content/uploads/2020/07/abbb.jpg);background-size: cover;">
             <div class="row ">
-                <img class="col-md-4 " src="img/1561621714426-1200x600.jpg ">
-                <img class="col-md-4 " src="img/cell-background-pizza-right-2.jpg ">
-                <img class="col-md-4 " src="img/para-2.jpg ">
-                <img class="col-md-4 " src="img/prod_11-300x300jpg.jpg ">
-                <img class="col-md-4 " src="img/prod_06-300x300jpg-2.jpg ">
-                <img class="col-md-4 " src="img/prod_13-300x300jpg-2.jpg ">
+                <img class="col-md-4" src="img/1561621714426-1200x600.jpg ">
+                <img class="col-md-4" src="img/cell-background-pizza-right-2.jpg ">
+                <img class="col-md-4" src="img/para-2.jpg ">
+                <img class="col-md-4" src="img/prod_11-300x300jpg.jpg ">
+                <img class="col-md-4" src="img/prod_06-300x300jpg-2.jpg ">
+                <img class="col-md-4" src="img/prod_13-300x300jpg-2.jpg ">
             </div>
         </div>
 
-         <!-- Footer -->
-    <footer class="page-footer font-small black">
-        <div class="container px-3 py-3 ">
-            <p class="text-light ">© 2020 Copyright: All Rights Reserved</p>
-        </div>
-    </footer>
-    <!-- Footer -->
+        <!-- Footer -->
+        <footer class="page-footer font-small black" id="footer">
+            <div class="container px-3 py-3 ">
+                <p class="text-light ">© 2020 Copyright: All Rights Reserved</p>
+            </div>
+        </footer>
+        <!-- Footer -->
     </section>
 
     <!-- Optional JavaScript -->
@@ -95,6 +116,15 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <!-- animate on scroll library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>

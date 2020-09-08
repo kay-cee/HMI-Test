@@ -177,8 +177,14 @@ h3 {
     .bgimg-3 {
         background-attachment: scroll;
     }
-    .btn-purple,
+    .mini-widgets,
     .top-list {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) {
+    .sideNavButton {
         display: none;
     }
 }
@@ -325,4 +331,57 @@ a span.border:hover {
 
 .row img {
     padding: 0px 0px !important;
+}
+
+#footer {
+    position: fixed;
+    height: 50px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    /* z-index: auto; */
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }

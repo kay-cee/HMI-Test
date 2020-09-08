@@ -17,8 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light white d-flex justify-content-center">
-
+    <nav class="navbar sticky-top navbar-light white d-flex justify-content-center">
         <div class="d-flex justify-content-center row">
             <ul class="row top-list">
                 <a href="#">
@@ -43,25 +42,57 @@
                     <li>Contact Us</li>
                 </a>
             </ul>
-
             <div class="mini-widgets row">
-                <!-- <div class="special-icons">
-                    <a class="btn btn-social-icon btn-twitter rounded">
-                        <i class="fa fa-twitter fa-2x"></i>
-                    </a>
-
-                </div> -->
                 <div class="btn-purple" style="background-color: transparent !important;">
                     <a href="#"><span class="border" style="font-family: Oswald; font-size: medium;">(01323) 840459</span></a>
                 </div>
-
             </div>
         </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="row ">
+                <a href="#">
+                    <li class="px-2 py-1 btn-outline-purple">Home</li>
+                </a>
+                <hr>
+                <a href="">
+                    <li>Events</li>
+                </a>
+                <hr>
+                <a href="">
+                    <li>Specials</li>
+                </a>
+                <hr>
+                <a href="">
+                    <li>Menu</li>
+                </a>
+                <hr>
+                <a href="">
+                    <li>Latest News</li>
+                </a>
+                <hr>
+                <a href="">
+                    <li>Gallery</li>
+                </a>
+                <hr>
+                <a href="">
+                    <li>Contact Us</li>
+                </a>
+                <hr>
 
+                <div class="btn-purple pt-5" style="background-color: transparent !important;">
+                    <a href="#"><span class="border" style="font-family: Oswald; font-size: medium;">(01323) 840459</span></a>
+                </div>
+            </ul>
+
+        </div>
+    </nav>
+    <nav class="d-flex justify-content-end mr-4">
+        <span class="sideNavButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
     </nav>
 
 
-    
+
     <div class="container" style="background-color: white;">
         <div class="section pt-3">
             <div id="calendar"></div>
@@ -69,8 +100,8 @@
     </div>
 
 
-     <!-- Footer -->
-     <footer class="page-footer font-small black mt-5">
+    <!-- Footer -->
+    <footer class="page-footer font-small black mt-5" id="footer">
 
         <!-- Copyright -->
         <div class="container px-3 py-3 ">
@@ -89,80 +120,88 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     <!-- animate on scroll library -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
     <script src="js/main.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
+            var calendarEl = document.getElementById('calendar');
 
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            headerToolbar: {
-                left: 'prev,next today',
-                center: 'title',
-                right: 'dayGridMonth'
-            },
-            initialDate: '2020-09-12',
-            navLinks: false, // can click day/week names to navigate views
-            businessHours: true, // display business hours
-            editable: false,
-            selectable: true,
-            events: [
-                {
-                title: 'Business Lunch',
-                start: '2020-09-03T13:00:00',
-                constraint: 'businessHours'
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth'
                 },
+                initialDate: '2020-09-12',
+                navLinks: false, // can click day/week names to navigate views
+                businessHours: true, // display business hours
+                editable: false,
+                selectable: true,
+                events: [{
+                        title: 'Business Lunch',
+                        start: '2020-09-03T13:00:00',
+                        constraint: 'businessHours'
+                    },
 
-                {
-                title: 'Meeting',
-                start: '2020-09-13T11:00:00',
-                constraint: 'availableForMeeting', // defined below
-                color: '#257e4a'
-                },
+                    {
+                        title: 'Meeting',
+                        start: '2020-09-13T11:00:00',
+                        constraint: 'availableForMeeting', // defined below
+                        color: '#257e4a'
+                    },
 
-                {
-                title: 'Conference',
-                start: '2020-09-18',
-                end: '2020-09-20'
-                },
+                    {
+                        title: 'Conference',
+                        start: '2020-09-18',
+                        end: '2020-09-20'
+                    },
 
-                {
-                title: 'Party',
-                start: '2020-09-29T20:00:00'
-                },
+                    {
+                        title: 'Party',
+                        start: '2020-09-29T20:00:00'
+                    },
 
-                // areas where "Meeting" must be dropped
-                {
-                groupId: 'availableForMeeting',
-                start: '2020-09-11T10:00:00',
-                end: '2020-09-11T16:00:00',
-                display: 'background'
-                },
+                    // areas where "Meeting" must be dropped
+                    {
+                        groupId: 'availableForMeeting',
+                        start: '2020-09-11T10:00:00',
+                        end: '2020-09-11T16:00:00',
+                        display: 'background'
+                    },
 
-                {
-                groupId: 'availableForMeeting',
-                start: '2020-09-13T10:00:00',
-                end: '2020-09-13T16:00:00',
-                display: 'background'
-                },
+                    {
+                        groupId: 'availableForMeeting',
+                        start: '2020-09-13T10:00:00',
+                        end: '2020-09-13T16:00:00',
+                        display: 'background'
+                    },
 
-                // red areas where no events can be dropped
-                {
-                start: '2020-09-24',
-                end: '2020-09-28',
-                overlap: false,
-                display: 'background',
-                color: '#ff9f89'
-                },
-                
-                {
-                start: '2020-09-06',
-                end: '2020-09-08',
-                overlap: false,
-                display: 'background',
-                color: '#ff9f89'
-                }
-            ]
+                    // red areas where no events can be dropped
+                    {
+                        start: '2020-09-24',
+                        end: '2020-09-28',
+                        overlap: false,
+                        display: 'background',
+                        color: '#ff9f89'
+                    },
+
+                    {
+                        start: '2020-09-06',
+                        end: '2020-09-08',
+                        overlap: false,
+                        display: 'background',
+                        color: '#ff9f89'
+                    }
+                ]
             });
 
             calendar.render();
